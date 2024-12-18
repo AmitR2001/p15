@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Staff Dashboard</h1>
+        <div id="login-section">
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <div id="patient-management" style="display:none;">
+            <h2>Patient Management</h2>
+            <button id="view-patients">View Patients</button>
+            <button id="update-patient">Update Patient</button>
+            <button id="delete-patient">Delete Patient</button>
+            <div id="patient-list" style="display:none;"></div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
